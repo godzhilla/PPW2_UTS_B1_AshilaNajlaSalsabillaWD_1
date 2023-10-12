@@ -17,7 +17,9 @@ class PemainFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nama_pemain'=> $this->faker->name(),
+            'no_punggung'=> $this->faker->number_format(),
+            'posisi'=> $this->faker->sentence()
         ];
     }
 }
